@@ -85,7 +85,7 @@
     .detail-desc { font-size: 14px; color: #374151; line-height: 1.72; margin-bottom: 24px; }
 
     .scale-box { background: #eef3fe; border: 1px solid #c5d9fb; border-radius: 10px; padding: 16px 18px; }
-    .scale-box-top { margin-bottom: 9px; }
+    .scale-box-top { margin-bottom: 9px; display: flex; align-items: center; justify-content: space-between; }
     .fn-pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 4px; letter-spacing: .03em; }
     .scale-how { font-size: 13px; color: #374151; line-height: 1.62; }
 
@@ -300,7 +300,7 @@ function showDetail(animate) {
       <div class="detail-divider"></div>
       <div class="detail-desc">${co.desc}</div>
       <div class="scale-box">
-        <div class="scale-box-top"><span style="font-size:11px;font-weight:700;color:#0043ec;margin-right:8px;letter-spacing:.04em;text-transform:uppercase;">How I'd help</span><span class="fn-pill" style="background:${fn.bg};color:${fn.txt}">${co.scaleFn}</span></div>
+        <div class="scale-box-top"><span style="font-size:11px;font-weight:700;color:#111827;letter-spacing:.04em;text-transform:uppercase;">Scale can...</span><span class="fn-pill" style="background:${fn.bg};color:${fn.txt}">${co.scaleFn}</span></div>
         <div class="scale-how">${co.scaleHow}</div>
       </div>`;
     panel.classList.remove("hidden");
